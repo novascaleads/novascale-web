@@ -622,3 +622,55 @@ button:focus-visible, a:focus-visible{ outline:2px solid var(--amber); outline-o
     margin-top:0;
   }
 }
+
+
+
+/* ===========================
+   MOBILE CENTER FIX
+=========================== */
+
+html,
+body{
+    margin:0 !important;
+    padding:0 !important;
+    width:100%;
+    overflow-x:hidden !important;
+}
+
+@media (max-width:768px){
+
+.hero,
+.cta,
+.footer{
+    padding-left:20px !important;
+    padding-right:20px !important;
+    margin:0 auto !important;
+}
+
+.hero-inner,
+.cta-inner,
+.footer-inner{
+    width:100% !important;
+    max-width:100% !important;
+    margin:0 auto !important;
+    padding:0 !important;
+    box-sizing:border-box !important;
+}
+
+.hero-copy,
+.cta-inner{
+    text-align:center !important;
+}
+
+.hero-actions{
+    justify-content:center !important;
+}
+
+.hero-actions .btn,
+.cta .btn{
+    width:100% !important;
+    max-width:100% !important;
+    margin:0 auto !important;
+}
+
+}
