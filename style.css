@@ -608,3 +608,17 @@ button:focus-visible, a:focus-visible{ outline:2px solid var(--amber); outline-o
 }
 
 }
+
+
+
+/*=================================================
+  FIX: keep hero side-by-side between 861px–992px
+=================================================*/
+@media(min-width:861px){
+  .hero-inner{
+    grid-template-columns:1.05fr .95fr;
+  }
+  .hero-signal{
+    margin-top:0;
+  }
+}
